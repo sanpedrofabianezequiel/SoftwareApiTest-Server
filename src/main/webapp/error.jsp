@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1" isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +7,9 @@
 <title>Error</title>
 </head>
 <body>
-
+	<h1>Error en Nuestra Aplicacion</h1>
+	<br>
+		<h2> <% exception.getMessage(); %></h2>
+	<a href="index.jsp">Volver</a>
 </body>
 </html>
